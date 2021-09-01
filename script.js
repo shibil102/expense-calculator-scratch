@@ -63,7 +63,7 @@ const generateID = () => {
 const addTransactionDOM = (transaction) => {
 // Get sign
 
-let sign = selector.value === 'income' ? '+' : '-'
+let sign = transaction.amount > 0 ? '+' : '-';
 
 
 const item = document.createElement('li');
